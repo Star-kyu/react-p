@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-https-redirect": "^1.1.0",
@@ -16,7 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "start:window": "SET HTTPS=true&& set PORT=443 && set SSL_CRT_FILE=ancrypt/cert.pem&& set SSL_KEY_FILE=ancrypt/privkey.pem&& react-scripts start",
-    "build": "react-scripts build"
+    "build": "SET HTTPS=true&& set PORT=443 && set SSL_CRT_FILE=ancrypt/cert.pem&& set SSL_KEY_FILE=ancrypt/privkey.pem&& react-scripts build",
+    "serve": "serve -s build -l 443 --ssl-cert ancrypt/cert.pem --ssl-key ancrypt/privkey.pem"
   },
   "eslintConfig": {
     "extends": [

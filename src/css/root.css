@@ -1,0 +1,41 @@
+.rootcon{
+    height : 100vh;
+}
+
+.path {
+    fill: none;
+    stroke: #f2f2f2;
+    stroke-width: 1px;
+}
+
+.path1 {
+    stroke-dasharray: 6884;
+    animation: drawPath1 1s linear, floating 5.2s linear infinite;
+}
+
+.content1 {
+    background-color: #f1f1f1;
+}
+
+.content2 {
+    background-color: #000;
+}
+
+.path2 {
+    stroke: #000;
+}
+
+@keyframes drawPath1 {
+0% {
+    stroke-dashoffset: 6884;
+}
+100% {
+    stroke-dashoffset: 0;
+}
+}
+
+@keyframes floating {
+50% {
+    transform: translate3d(0, 10px, 0);
+}
+}
