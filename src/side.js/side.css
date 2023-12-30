@@ -1,0 +1,31 @@
+.ov{
+    overflow: auto;
+    -ms-overflow-style: none;   /* 인터넷 익스플로러 */
+    scrollbar-width: none;      /* 파이어폭스 */
+}
+
+.ov::-webkit-scrollbar {
+    display: none;              /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+.me{
+    background-image: url('../img/card.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    display: flex;
+    align-items: center;
+}
+.ne{
+    position: relative;
+    transition: transform 1s;
+    transform : translateY(-2px);
+}
+.ne:hover{
+    transform : translateY(-4px);
+}
+
+.st01{opacity:0.8;fill:#723600;stroke:#0A0203;stroke-width:5;stroke-miterlimit:10;}
+.st02{opacity:0.8;fill:#0F3383;stroke:#231815;stroke-width:5;stroke-miterlimit:10;}
+.st03{opacity:0.8;fill:#067006;stroke:#231815;stroke-width:5;stroke-miterlimit:10;}
+.st04{opacity:1;fill:#FFFFFF;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
